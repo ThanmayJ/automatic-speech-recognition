@@ -45,7 +45,7 @@ This implementation uses the following architecture:
 
 ## Result
 
-A Word Error Ratio (WER) of 46% was obtained. However, a lower rate can be expected with increase in epochs.
+A Word Error Ratio (WER) of 46% was obtained. However, a much lower rate can be expected with increase in epochs.
 
 ## References
 
