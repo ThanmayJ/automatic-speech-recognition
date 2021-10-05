@@ -51,6 +51,25 @@ The model is based on a transformer architecture, adapted from the paper [Very D
 | 6       | 15              | 3              | 12               | 12               | 0.4764      | 0.5252      | -         | -       |
 
 A minimum Word Error Ratio (WER) of 67.9% was obtained. However, a much lower rate can be expected with a deeper network (eg. increasing the encoder and decoder layers).
+*Note: Certain cells are marked with `-` due to compute limitations. *
+Few sample predictions for the least WER.
+```
+Target    : <secret service personnel and facilities>
+Prediction: <secret service personal and facilities.>
+----------------------------------------------------------------------------------------------------
+Target    : <to make certain that all protective intelligence activities are coordinated.>
+Prediction: <to make sertain that all protective a naties are coordinated.>
+----------------------------------------------------------------------------------------------------
+Target    : <while these statistics relate to the activities of secret service agents stationed in field offices and not the white house detail,>
+Prediction: <while these to tistics relate house detail, stationed in field offices agents secret service and not awite house detail,>
+----------------------------------------------------------------------------------------------------
+Target    : <however, the nineteen sixtyfour to sixtyfive budget request was submitted in november nineteen sixtythree>
+Prediction: <however, it the nineteen sixty for quest was submitted in november nineteen sixty five bugest three>
+----------------------------------------------------------------------------------------------------
+Target    : <to assist in its protection functions.>
+Prediction: <to assist in its protections.>
+----------------------------------------------------------------------------------------------------
+```
 
 ## References
 
