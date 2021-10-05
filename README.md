@@ -52,7 +52,7 @@ The model is based on a transformer architecture, adapted from the paper [Very D
 
 A minimum Word Error Ratio (WER) of 67.9% was obtained. However, a much lower rate can be expected with a deeper network (eg. increasing the encoder and decoder layers).
 
-*Note: Some cells are marked with `-` due to compute limitations. *
+Note: Some cells are marked with `-` due to compute limitations.
 
 Few sample predictions for the least WER.
 ```
