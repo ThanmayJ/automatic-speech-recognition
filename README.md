@@ -54,7 +54,7 @@ A minimum Word Error Ratio (WER) of 67.9% was obtained. However, a much lower ra
 
 Note: Some cells are marked with `-` due to compute limitations.
 
-Few sample predictions for the least WER.
+Few sample predictions for the least WER:
 ```
 Target    : <secret service personnel and facilities>
 Prediction: <secret service personal and facilities.>
