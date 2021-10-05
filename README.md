@@ -37,15 +37,20 @@ Shape of each speech feature sample: (2754, 129)
 ## Model
 
 The model is based on a transformer architecture, adapted from the paper [Very Deep Self-Attention Networks for End-to-End Speech Recognition](https://arxiv.org/abs/1904.13377).
-This implementation uses the following architecture:
-* Number of heads: 2
-* Number of Encoder layers: 4
-* Number of Decoder layers: 1
-* Num classes: 34 (27 alphabets + 7 common symbols)
+
 
 ## Result
 
-A Word Error Ratio (WER) of 46% was obtained. However, a much lower rate can be expected with increase in epochs.
+| Sr. no. | Warmup Epochs # | Decay Epochs # | Encoder layers # | Decoder layers # | Train. loss | Valid. loss | Params #  | WER (%) |
+| ------- | --------------- | -------------- | ---------------- | ---------------- | ----------- | ----------- | --------- | ------- |
+| 1       | 15              | 10             | 4                | 1                | 0.4556      | 0.6012      | 3,953,836 | 90.5    |
+| 2       | 15              | 85             | 4                | 1                | 0.3507      | 0.6991      | 3,953,836 | 88.7    |
+| 3       | 15              | 10             | 5                | 5                | 0.3689      | 0.4705      | 7,655,036 | 69.8    |
+| **4     | 15              | 85             | 4                | 5                | 0.3336      | 0.4791      | 7,172,236 | 67.9**  |
+| 5       | 15              | 10             | 8                | 8                | 0.3659      | 0.4568      | -         | -       |
+| 6       | 15              | 3              | 12               | 12               | 0.4764      | 0.5252      | -         | -       |
+
+A minimum Word Error Ratio (WER) of 67.9% was obtained. However, a much lower rate can be expected with a deeper network (eg. increasing the encoder and decoder layers).
 
 ## References
 
